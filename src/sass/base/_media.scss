@@ -1,0 +1,57 @@
+@media(max-width: 1200px) {
+    .container {
+        max-width: 870px;
+    }
+    .advantages {
+        &__item {
+            max-width: 245px;
+        }
+    }
+}
+
+@media(max-width: 991px) {
+    .container {
+        max-width: 700px;
+    }
+    .header {
+        &__logo {
+            width: 215px;
+        }
+    }
+    .promo {
+        &__header {
+            font-size: 38px;
+            line-height: 39px;
+        }
+        &__subheader {
+            font-size: 21px;
+            line-height: 20px;
+        }
+        &__icons {
+            width: 405px;
+        }
+        &__link {
+            a {
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .advantages {
+        &__item {
+            max-width: 203px;
+        }
+        &__subtitle {
+            margin-top: 33px;
+        }
+        &__descr {
+            font-size: 13px;
+            margin-top: 18px;
+        }
+    }
+}
+
+@media(max-width: 767px) {
+
+}
