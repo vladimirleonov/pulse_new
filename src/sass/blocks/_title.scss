@@ -6,4 +6,10 @@
     text-align: center;
     text-transform: uppercase;
     margin: 0;
+    &_free {
+        font-size: 36px;
+        color: #fff;
+        text-align: left;
+        line-height: 40px;
+    }
 }
