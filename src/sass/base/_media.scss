@@ -1,6 +1,7 @@
 @media(max-width: 1200px) {
     .container {
-        max-width: 88vw;
+        // max-width: 88vw;
+        width: 960px;
     }
     .advantages {
         &__wrapper {
@@ -10,9 +11,15 @@
             max-width: 245px;
         }
     }
+    .title_free {
+        font-size: 34px;
+    }
 }
 
 @media(max-width: 991px) {
+    .container {
+        width: 720px;
+    }
     .header {
         &__logo {
             width: 215px;
@@ -53,9 +60,15 @@
             margin-top: 18px;
         }
     }
+    .title_free {
+        font-size: 31px;
+    }
 }
 
 @media(max-width: 767px) {
+    .container {
+        width: 540px;
+    }
     .header {
         &__official {
             display: none;
@@ -101,10 +114,17 @@
             max-width: 282px;
             margin-top: 70px;
         }
-    }  
+    } 
+    .title_free {
+        font-size: 30px;
+        line-height: 41px;
+    } 
 }
 
 @media(max-width: 575px) {
+    .container {
+        max-width: 88vw;
+    }
     .header {
         &__phone {
             font-size: 12px;
@@ -168,6 +188,37 @@
         }
     }
     .title {
-        font-size: 20px;
+        font-size: 22px;
+        &_free {
+            font-size: 21px;
+            line-height: 30px;
+        }
     }
+    .consultation {
+        min-height: 568px;
+        padding: 70px 0;
+        &__descr {
+            font-size: 14px;
+            line-height: 20px;
+            margin-top: 70px;
+        }
+    }
+    .feed-form {
+        width: 281px;
+        input {
+            font-size: 13px;
+            height: 35px;
+            width: 88%;
+            margin-bottom: 13px;
+            &:nth-child(3) {
+                margin-bottom: 15px;
+            }
+        }
+    }
+    .button_free {
+        width: 88%;
+        height: 35px;
+        font-size: 12px;
+    }
+    
 }
