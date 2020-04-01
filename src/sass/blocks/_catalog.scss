@@ -54,9 +54,12 @@
       min-height: 440px;
       border: 2px solid #d0d0d0;
       padding: 20px 20px 0 20px;
+<<<<<<< HEAD
       overflow: hidden;
       margin-bottom: 20px;
       // margin: 0 5px 20px 5px;
+=======
+>>>>>>> dbefd71b59cc73355dddf9125a9754b592be3694
       &__img {
          display: block;
          height: 200px;
@@ -89,6 +92,10 @@
          text-decoration: underline;
          &:hover {
             text-decoration: none;
+<<<<<<< HEAD
+=======
+            cursor: pointer;
+>>>>>>> dbefd71b59cc73355dddf9125a9754b592be3694
             color: $main_color;
          }
       }
@@ -139,6 +146,10 @@
          margin-left: 22px;
          transform: translateX(0);
          transition: 0.5s all;
+<<<<<<< HEAD
+=======
+         transition: 0.5s all;
+>>>>>>> dbefd71b59cc73355dddf9125a9754b592be3694
          &_active {
             transform: translateX(-100%);
             margin-left: 0;
@@ -179,10 +190,18 @@
          font-size: 14px;
          line-height: 15px;
          font-weight: 500;
+<<<<<<< HEAD
+=======
+         text-align: center;
+>>>>>>> dbefd71b59cc73355dddf9125a9754b592be3694
          text-transform: uppercase;
          text-decoration: underline;
          &:hover {
             text-decoration: none;
+<<<<<<< HEAD
+=======
+            cursor: pointer;
+>>>>>>> dbefd71b59cc73355dddf9125a9754b592be3694
             color: $main_color;
          }
       }
