@@ -1,5 +1,5 @@
 .catalog {
-   padding: 0 0 104px 0;
+   padding: 0 0 80px 0;
    &__title {
       font-size: 30px;
       font-weight: 700;
@@ -26,33 +26,42 @@
       line-height: 50px;
       text-align: center;
       transition: 0.3s all;
+      background-color: #fff;
       cursor: pointer;
-      &:hover {
-         box-shadow: 3px 3px 20px $main_color;
-      }
       &_active {
          background-color: $main_color;
          color: #fff;
          border: none;
+      }
+      &:hover {
+         box-shadow: 3px 3px 20px $main_color;
       }
       div {
          transform: skewX(25deg);
       }
    }
    &__content {
+      display: none;
+      flex-wrap: wrap;
+      justify-content: space-between;
       margin-top: 59px;
+      &_active {
+         display: flex;
+      }
    }
    &-item {
       width: 300px;
       min-height: 440px;
       border: 2px solid #d0d0d0;
-      padding: 0 20px;
+      padding: 20px 20px 0 20px;
+      overflow: hidden;
+      margin-bottom: 20px;
+      // margin: 0 5px 20px 5px;
       &__img {
          display: block;
          height: 200px;
          width: 140px;
          margin: 0 auto;
-         margin-top: 20px;
       }
       &__subtitle {
          font-size: 16px;
@@ -67,7 +76,7 @@
          text-align: center;
          margin-top: 16px;
       }
-      &__link {
+      &__link-more {
          display: block;
          color: $main_color;
          font-size: 14px;
@@ -80,7 +89,7 @@
          text-decoration: underline;
          &:hover {
             text-decoration: none;
-            cursor: pointer;
+            color: $main_color;
          }
       }
       &__line {
@@ -93,7 +102,7 @@
          display: flex;
          justify-content: space-between;
          align-items: center;
-         margin: 20px 0;
+         margin-top: 10px;
       }
       &__old-price {
          font-size: 14px;
@@ -114,31 +123,68 @@
       }
       &__content {
          width: 50%;
-         margin-right: 0px;
+         margin-right: 0;
          padding-right: 22px;
          transform: translateX(-100%);
+         transition: 0.5s all;
          &_active {
             transform: translateX(0%);
             margin-right: 22px;
-            padding-right: 0px;
+            padding-right: 0;
          }
       }
       &__list-block {
+         position: relative;
          width: 50%;
          margin-left: 22px;
          transform: translateX(0);
+         transition: 0.5s all;
          &_active {
             transform: translateX(-100%);
             margin-left: 0;
             padding-right: 22px;
          }
       }
-      &__list-items {
+      &__list {
+         position: relative;
          list-style-type: none;
-         padding-left: 0;
-         margin-bottom: 0;
-         color: #555555;
+         padding-left: 19px;
+         margin-bottom: 0px;
+         li {
+            position: relative;
+            font-size: 14px;
+            font-weight: 500;
+            color: #555555;
+            margin-bottom: 10px;
+            line-height: 18px;
+            &:before {
+               content: "";
+               position: absolute;
+               width: 5px;
+               height: 5px;
+               background-color: $main_color;
+               left: -19px;
+               top: 8px;
+            }
+         }
+      }
+
+      &__link-back {
+         position: absolute;
+         bottom: 2px;
+         left: 50%;
+         transform: translateX(-50%);
+         display: block;
+         color: $main_color;
          font-size: 14px;
+         line-height: 15px;
+         font-weight: 500;
+         text-transform: uppercase;
+         text-decoration: underline;
+         &:hover {
+            text-decoration: none;
+            color: $main_color;
+         }
       }
    }
 }
