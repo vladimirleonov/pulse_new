@@ -1,4 +1,4 @@
-@media(max-width: 1200px) {
+@media (max-width: 1200px) {
 	.container {
 		// max-width: 88vw;
 		width: 960px;
@@ -15,11 +15,11 @@
 		font-size: 34px;
 	}
 }
-   
-@media(max-width: 991px) {
+
+@media (max-width: 991px) {
 	.container {
 		width: 720px;
-	} 
+	}
 	.header {
 		&__logo {
 			width: 215px;
@@ -74,7 +74,7 @@
 	}
 }
 
-@media(max-width: 767px) {
+@media (max-width: 767px) {
 	.container {
 		width: 540px;
 	}
@@ -92,7 +92,7 @@
 		}
 		&__subheader {
 			font-size: 19px;
-		}   
+		}
 		&__icons {
 			width: 380px;
 		}
@@ -123,11 +123,11 @@
 			max-width: 282px;
 			margin-top: 70px;
 		}
-	} 
+	}
 	.title_free {
 		font-size: 30px;
 		line-height: 41px;
-	} 
+	}
 	.carousel {
 		&__inner {
 			width: 500px;
@@ -162,11 +162,11 @@
 					margin: 0 5px;
 				}
 			}
-		}  
+		}
 	}
 }
 
-@media(max-width: 575px) {
+@media (max-width: 575px) {
 	.container {
 		max-width: 88vw;
 	}
@@ -177,7 +177,6 @@
 		&__logo {
 			width: 150px;
 		}
-		
 	}
 	.button {
 		width: 110px;
