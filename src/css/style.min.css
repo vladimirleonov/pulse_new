@@ -365,6 +365,7 @@
       -ms-flex-align: center;
           align-items: center;
   margin-top: 68px;
+  padding-left: 0;
 }
 
 .catalog__tab {
@@ -458,7 +459,6 @@
   text-align: center;
   text-transform: uppercase;
   margin-top: 18px;
-  padding: 0 80px;
   text-decoration: underline;
 }
 
@@ -545,7 +545,6 @@
 }
 
 .catalog-item__list {
-  position: relative;
   list-style-type: none;
   padding-left: 19px;
   margin-bottom: 0px;
@@ -573,7 +572,7 @@
 .catalog-item__link-back {
   position: absolute;
   bottom: 2px;
-  left: 50%;
+  left: 47%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   display: block;
@@ -934,6 +933,7 @@
     display: -ms-flexbox;
     display: flex;
     width: calc(200% + 44px);
+    height: 317.4px;
   }
   .catalog-item__content {
     width: 236px;
