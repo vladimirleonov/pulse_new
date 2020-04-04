@@ -89,6 +89,27 @@
 			}
 		}
 	}
+	.reviews {
+		&__title {
+			font-size: 22px;
+			line-height: 27px;
+		}
+		&__wrapper {
+			padding-right: 0;
+		}
+		&-item {
+			&__img {
+				margin-right: 52px;
+			}
+			&__result {
+				margin-top: 15px;
+			}
+			&__descr {
+				margin-top: 10px;
+				line-height: 21px;
+			}
+		}
+	}
 }
 
 @media (max-width: 767px) {
@@ -217,6 +238,27 @@
 		}
 		&__content {
 			margin-top: 50px;
+		}
+	}
+	.reviews {
+		&__wrapper {
+			margin-top: 50px;
+		}
+		&-item {
+			flex-direction: column;
+			&__content {
+				width: 100%;
+				margin-top: 30px;
+			}
+			&__img {
+				margin: 0;
+			}
+			&__subtitle {
+				text-align: center;
+			}
+			&__result {
+				margin-top: 20px;
+			}
 		}
 	}
 }
@@ -383,6 +425,14 @@
 		}
 		&__new-price {
 			font-size: 19px;
+		}
+	}
+	.reviews {
+		&-item {
+			&__descr {
+				font-size: 15px;
+				margin-top: 8px;
+			}
 		}
 	}
 }

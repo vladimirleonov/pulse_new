@@ -7,7 +7,7 @@
       text-align: center;
    }
    &__wrapper {
-      margin-top: 25px;
+      margin-top: 55px;
       padding-right: 60px;
       display: flex;
       flex-direction: column;
@@ -18,7 +18,7 @@
       justify-content: space-between;
       align-items: center;
       min-height: 220px;
-      margin-bottom: 40px;
+      margin-bottom: 70px;
       &__content {
          width: 665px;
       }
@@ -28,7 +28,7 @@
          line-height: 20px;
       }
       &__result {
-         font-style: 14px;
+         font-size: 14px;
          font-weight: 300;
          color: #646464;
          line-height: 15px;
