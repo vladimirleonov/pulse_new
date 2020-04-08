@@ -7,7 +7,7 @@
       text-align: center;
    }
    &__wrapper {
-      margin-top: 25px;
+      margin-top: 40px;
       padding-right: 60px;
       display: flex;
       flex-direction: column;
@@ -18,7 +18,7 @@
       justify-content: space-between;
       align-items: center;
       min-height: 220px;
-      margin-bottom: 40px;
+      margin-bottom: 50px;
       &__content {
          width: 665px;
       }
@@ -37,8 +37,12 @@
       &__descr {
          font-size: 16px;
          font-weight: 300;
-         margin-top: 19px;
+         margin-top: 16px;
          line-height: 22px;
+         &-mt {
+            display: block;
+            margin-top: 10px;
+         }
       }
    }
 }

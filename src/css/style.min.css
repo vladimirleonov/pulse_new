@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   font-family: "Museo Sans Cyrl", sans-serif;
 }
@@ -603,7 +604,7 @@
 }
 
 .reviews__wrapper {
-  margin-top: 25px;
+  margin-top: 40px;
   padding-right: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -628,7 +629,7 @@
       -ms-flex-align: center;
           align-items: center;
   min-height: 220px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .reviews-item__content {
@@ -652,8 +653,13 @@
 .reviews-item__descr {
   font-size: 16px;
   font-weight: 300;
-  margin-top: 19px;
+  margin-top: 16px;
   line-height: 22px;
+}
+
+.reviews-item__descr-mt {
+  display: block;
+  margin-top: 10px;
 }
 
 @media (max-width: 1200px) {
@@ -671,6 +677,9 @@
   }
   .catalog__tabs {
     padding-left: 0;
+  }
+  .reviews__wrapper {
+    padding: 0 30px;
   }
 }
 
@@ -725,6 +734,15 @@
   .catalog-item:nth-child(2n) {
     margin-right: 25px;
     margin-bottom: 30px;
+  }
+  .reviews__wrapper {
+    padding: 0;
+  }
+  .reviews-item__img {
+    margin-right: 46px;
+  }
+  .reviews-item__descr-mt {
+    margin-top: 8px с;
   }
 }
 
@@ -849,6 +867,33 @@
   .catalog__content {
     margin-top: 50px;
   }
+  .reviews-item {
+    padding: 0 31px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .reviews-item__wrapper {
+    margin-top: 50px;
+  }
+  .reviews-item__img {
+    margin-right: 0;
+  }
+  .reviews-item__content {
+    width: 100%;
+    margin-top: 23px;
+  }
+  .reviews-item__subtitle {
+    text-align: center;
+  }
+  .reviews-item__result {
+    margin-top: 10px;
+    text-align: center;
+  }
+  .reviews-item__descr {
+    margin-top: 16px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -913,7 +958,7 @@
     margin-top: 25px;
   }
   .advantages__descr {
-    font-size: 12px;
+    font-size: 13px;
     margin-top: 13px;
   }
   .title {
@@ -1014,6 +1059,21 @@
   }
   .catalog__new-price {
     font-size: 19px;
+  }
+  .reviews__title {
+    font-size: 22px;
+  }
+  .reviews-item {
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+  }
+  .reviews-item__descr {
+    font-size: 14px;
+  }
+  .reviews-item__descr-mt {
+    margin-top: 10px;
   }
 }
 /*# sourceMappingURL=style.min.css.map */
