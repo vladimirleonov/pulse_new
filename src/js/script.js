@@ -66,6 +66,30 @@ $(document).ready(function () {
 
     toggleSlide('.catalog-item__link-more');
     toggleSlide('.catalog-item__link-back');
+
+
+    //Modal
+
+    //click on order a call or order a consultation
+    $('[data-modal=consultation]').on('click', function () {
+        $('.overlay, #consultation').fadeIn('slow');
+    });
+    // click on close
+    $('.modal__close').on('click', function () {
+        $('.overlay, #consultation, #order, #thanks').fadeOut('slow');
+    });
+    //click on buy
+    // $('.button_mini').on('click', function () {
+    //     $('.overlay, #order').fadeIn('slow');
+    // });
+    $('.button_mini').each(function (i) {
+        $(this).on('click', function () {
+            $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
+            $('.overlay, #order').fadeIn('slow');
+        })
+    })
+
+
 });
 
 
