@@ -55,7 +55,7 @@
                 <button data-modal="consultation" class="button button_main">заказать консультацию</button>
                 <div class="promo__link">
                     или
-                    <a href="#">перейти в каталог</a>
+                    <a href="#catalog">перейти в каталог</a>
                 </div>
             </div>
         </div>
@@ -99,10 +99,10 @@
             <div class="consultation__descr">
                 Просто заполните форму заявки <br> и мы перезвоним вам в течении 10 минут
             </div>
-            <form class="feed-form" action="#">
-                <input name="name" required placeholder="Ваше имя" type="text">
-                <input name="phone" required placeholder="Ваше телефон" type="number">
-                <input name="email" required placeholder="Ваш E-mail" type="email">
+            <form id="consultation-form" class="feed-form" action="#">
+                <input name="name" placeholder="Ваше имя" type="text">
+                <input name="phone" placeholder="Ваше телефон" type="number">
+                <input name="email" placeholder="Ваш E-mail" type="email">
                 <button class="button button_free">заказать консультацию</button>
             </form>
         </div>
@@ -117,9 +117,9 @@
             </div>
         </div>
     </section>
-    <section class="catalog">
+    <section id="catalog" class="catalog">
         <div class="container">
-            <h2 class="catalog__title">Каталог пульсометров</h2>
+            <h2 class="title">Каталог пульсометров</h2>
             <ul class="catalog__tabs">
                 <li class="catalog__tab catalog__tab_active">
                     <div>для фитнеса</div>
@@ -491,7 +491,7 @@
     </section>
     <section class="reviews">
         <div class="container">
-            <div class="reviews__title">Отзывы клиентов</div>
+            <div class="title">Отзывы клиентов</div>
             <div class="reviews__wrapper">
                 <div class="reviews-item">
                     <img src="icons/reviews/Irina_icon.jpg.png" alt="icon_client" class="reviews-item__img">
@@ -552,7 +552,7 @@
     <footer class="footer">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.43343471735!2d37.645622707629634!3d55.76834367967429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDQvMywg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEwNzA3OA!5e0!3m2!1sru!2sby!4v1586364871473!5m2!1sru!2sby"
-            width="100%" height="630" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
             tabindex="0">
         </iframe>
         <div class="footer__info">
@@ -566,8 +566,7 @@
 
         </div>
     </footer>
-
-    <div class="overlay">
+    <section class="overlay">
         <div class="modal" id="consultation">
             <div class="modal__close">&times;</div>
             <div class="modal__subtitle">Просто заполните форму заявки</div>
@@ -595,13 +594,14 @@
             <div class="modal__subtitle">Спасибо за вашу заявку!</div>
             <div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время!</div>
         </div>
-    </div>
+    </section>
 
 
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/script.js"></script>
 
 </body>

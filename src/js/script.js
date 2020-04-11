@@ -38,22 +38,6 @@ $(document).ready(function () {
             .closest('div.container').find('div.catalog__content').removeClass('catalog__content_active').eq($(this).index()).addClass('catalog__content_active');
     });
 
-    // $('.catalog-item__link-more').each(function (i) {
-    //     $(this).on('click', function (e) {
-    //         e.preventDefault();
-    //         $('.catalog-item__content').eq(i).toggleClass('catalog-item__content_active');
-    //         $('.catalog-item__list-block').eq(i).toggleClass('catalog-item__list-block_active');
-    //     })
-    // });
-
-    // $('.catalog-item__link-back').each(function (i) {
-    //     $(this).on('click', function (e) {
-    //         e.preventDefault();
-    //         $('.catalog-item__content').eq(i).toggleClass('catalog-item__content_active');
-    //         $('.catalog-item__list-block').eq(i).toggleClass('catalog-item__list-block_active');
-    //     })
-    // });
-
     function toggleSlide(item) {
         $(item).each(function (i) {
             $(this).on('click', function (e) {
@@ -89,6 +73,39 @@ $(document).ready(function () {
         })
     })
 
+
+    //jquery validate plugin
+
+    function valideForms(form) {
+        $(form).validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2
+                },
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name: {
+                    required: "Пожалуйста, введите свое имя",
+                    minlength: jQuery.validator.format('Минимальная длина {0} символ!')
+                },
+                phone: "Пожалуйста, введите свой номер телефона",
+                email: {
+                    required: "Пожалуйста, введите свой почтовый адрес",
+                    email: "Неверно введен адрес почты"
+                }
+            }
+        });
+    }
+
+    valideForms('#consultation-form');
+    valideForms('#consultation form');
+    valideForms('#order form');
 
 });
 

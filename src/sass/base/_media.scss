@@ -240,6 +240,7 @@
 		}
 	}
 	.reviews {
+		padding-bottom: 50px;
 		&-item {
 			padding: 0 31px;
 			&__wrapper {
@@ -262,6 +263,29 @@
 			}
 			&__descr {
 				margin-top: 16px;
+			}
+		}
+	}
+	.footer {
+		height: 570px;
+		&__info {
+			height: 200px;
+			width: 400px;
+			padding: 38px 50px 32px 50px;
+		}
+		&__address {
+			font-size: 18px;
+		}
+		&__phone {
+			font-size: 18px;
+			margin-top: 20px;
+		}
+		&__social {
+			margin-top: 20px;
+			&-item {
+				width: 45px;
+				height: 45px;
+				font-size: 22px;
 			}
 		}
 	}
@@ -432,6 +456,7 @@
 		}
 	}
 	.reviews {
+		padding-bottom: 20px;
 		&__title {
 			font-size: 22px;
 		}
@@ -446,6 +471,63 @@
 					margin-top: 10px;
 				}
 			}
+		}
+	}
+	.footer {
+		height: 480px;
+		&__info {
+			height: 150px;
+			width: 270px;
+			padding: 22px 31px 27px 31px;
+		}
+		&__address {
+			font-size: 14px;
+			line-height: 14px;
+		}
+		&__phone {
+			font-size: 14px;
+			margin-top: 14px;
+			line-height: 14px;
+		}
+		&__social {
+			margin-top: 14px;
+			&-item {
+				width: 35px;
+				height: 35px;
+				font-size: 18px;
+				margin: 0 10px;
+			}
+		}
+	}
+	.overlay {
+		.modal {
+			width: 260px;
+			min-height: 337px;
+			padding: 35px 25px;
+			&__subtitle {
+				font-size: 16px;
+				line-height: 14px;
+			}
+			&__descr {
+				font-size: 13px;
+			}
+			&__close {
+				right: 5px;
+				top: 4px;
+				font-size: 29px;
+			}
+		}
+	}
+	.feed-form {
+		width: 210px;
+		margin-top: 20px;
+		input {
+			width: 100%;
+			font-size: 12px;
+			padding: 0 15px;
+		}
+		.button_free {
+			width: 100%;
 		}
 	}
 }
