@@ -1,4 +1,33 @@
 @charset "UTF-8";
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 * {
   font-family: "Museo Sans Cyrl", sans-serif;
 }
@@ -241,6 +270,16 @@
 
 .advantages__descr a:hover {
   text-decoration: none;
+}
+
+.advantages__icon_animate {
+  -webkit-animation: heartbeat 1.5s ease infinite;
+          animation: heartbeat 1.5s ease infinite;
+}
+
+.advantages__icon_animate:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 
 .title {
