@@ -133,7 +133,7 @@ $(document).ready(function () {
             $('.pageup').fadeOut();
         }
     });
-    //scroll smooth 
+    //scroll smooth top 
     $(function () {
         $("a[href^='#']").click(function () {
             var _href = $(this).attr("href");
@@ -141,6 +141,8 @@ $(document).ready(function () {
             return false;
         });
     });
+
+    new WOW().init();
 
 });
 

@@ -109,6 +109,10 @@
 			}
 		}
 	}
+	.pageup {
+		right: 25px;
+		bottom: 25px;
+	}
 }
 
 @media (max-width: 767px) {
@@ -474,15 +478,15 @@
 		}
 	}
 	.footer {
-		height: 480px;
+		height: 470px;
 		&__info {
-			height: 150px;
-			width: 270px;
-			padding: 22px 31px 27px 31px;
+			height: 140px;
+			width: 235px;
+			padding: 22px 28px 27px 28px;
 		}
 		&__address {
 			font-size: 14px;
-			line-height: 14px;
+			line-height: 16px;
 		}
 		&__phone {
 			font-size: 14px;
@@ -492,8 +496,8 @@
 		&__social {
 			margin-top: 14px;
 			&-item {
-				width: 35px;
-				height: 35px;
+				width: 30px;
+				height: 30px;
 				font-size: 18px;
 				margin: 0 10px;
 			}
@@ -502,7 +506,7 @@
 	.overlay {
 		.modal {
 			width: 260px;
-			min-height: 337px;
+			min-height: 311px;
 			padding: 35px 25px;
 			&__subtitle {
 				font-size: 16px;
@@ -529,5 +533,11 @@
 		.button_free {
 			width: 100%;
 		}
+	}
+	.pageup {
+		right: 10px;
+		bottom: 10px;
+		width: 30px;
+		height: 30px;
 	}
 }
