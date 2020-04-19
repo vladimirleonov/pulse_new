@@ -36,6 +36,7 @@
 		}
 	}
 	.promo {
+		background-position: 40%;
 		&__header {
 			font-size: 38px;
 			line-height: 39px;
@@ -125,6 +126,7 @@
 		}
 	}
 	.promo {
+		background-position: 38%;
 		&__wrapper {
 			margin-top: 80px;
 		}
@@ -318,8 +320,13 @@
 			font-size: 14px;
 			margin-top: 80px;
 		}
+		&_mini {
+			height: 35px;
+			font-size: 14px;
+		}
 	}
 	.promo {
+		background-position: 34%;
 		min-height: 445px;
 		&__wrapper {
 			margin-top: 110px;
@@ -430,6 +437,9 @@
 			}
 			&__content {
 				width: 236px;
+			}
+			&__descr {
+				line-height: 18px;
 			}
 			&__list-block {
 				width: 236px;

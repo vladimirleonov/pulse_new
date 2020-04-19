@@ -833,6 +833,9 @@
   .header__logo {
     width: 215px;
   }
+  .promo {
+    background-position: 40%;
+  }
   .promo__header {
     font-size: 38px;
     line-height: 39px;
@@ -899,6 +902,9 @@
   }
   .header__official {
     display: none;
+  }
+  .promo {
+    background-position: 38%;
   }
   .promo__wrapper {
     margin-top: 80px;
@@ -1091,7 +1097,12 @@
     font-size: 14px;
     margin-top: 80px;
   }
+  .button_mini {
+    height: 35px;
+    font-size: 14px;
+  }
   .promo {
+    background-position: 34%;
     min-height: 445px;
   }
   .promo__wrapper {
@@ -1211,6 +1222,9 @@
   }
   .catalog-item__content {
     width: 236px;
+  }
+  .catalog-item__descr {
+    line-height: 18px;
   }
   .catalog-item__list-block {
     width: 236px;
