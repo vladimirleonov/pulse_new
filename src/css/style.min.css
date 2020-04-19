@@ -1162,7 +1162,7 @@
     padding: 60px 0;
   }
   .carousel__inner {
-    width: 270px;
+    width: 100%;
   }
   .carousel__inner img {
     width: 100%;
@@ -1284,17 +1284,17 @@
   }
   .feed-form {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 25px;
   }
   .feed-form input {
     width: 100%;
-    height: 40px;
+    height: 45px;
     padding: 0 15px;
     font-size: 14px;
   }
   .feed-form .button_free {
     width: 100%;
-    height: 40px;
+    height: 45px;
     font-size: 14px;
   }
   .pageup {
