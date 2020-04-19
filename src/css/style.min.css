@@ -1146,21 +1146,12 @@
     padding: 70px 0;
   }
   .consultation__descr {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 20px;
     margin-top: 70px;
   }
-  .feed-form {
-    width: 281px;
-  }
-  .feed-form input {
-    font-size: 13px;
-    height: 35px;
-    width: 85%;
-    margin-bottom: 13px;
-  }
-  .feed-form input:nth-child(3) {
-    margin-bottom: 15px;
+  .consultation .feed-form {
+    width: 251px;
   }
   .button_free {
     width: 85%;
