@@ -1086,16 +1086,16 @@
     margin-top: 2px;
   }
   .button_main {
-    width: 190px;
-    height: 40px;
-    font-size: 12px;
+    width: 230px;
+    height: 50px;
+    font-size: 14px;
     margin-top: 80px;
   }
   .promo {
     min-height: 445px;
   }
   .promo__wrapper {
-    margin-top: 67px;
+    margin-top: 110px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1113,11 +1113,11 @@
     display: none;
   }
   .promo__link {
-    font-size: 11px;
+    font-size: 12px;
     margin-top: 10px;
   }
   .promo__link a {
-    font-size: 12px;
+    font-size: 13px;
   }
   .advantages {
     padding: 50px 0 60px 0;
@@ -1275,16 +1275,16 @@
     margin: 0 10px;
   }
   .overlay .modal {
-    width: 260px;
-    min-height: 311px;
+    width: 290px;
+    min-height: 380px;
     padding: 35px 25px;
   }
   .overlay .modal__subtitle {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 14px;
   }
   .overlay .modal__descr {
-    font-size: 13px;
+    font-size: 14px;
   }
   .overlay .modal__close {
     right: 5px;
@@ -1292,16 +1292,19 @@
     font-size: 29px;
   }
   .feed-form {
-    width: 210px;
+    width: 100%;
     margin-top: 20px;
   }
   .feed-form input {
     width: 100%;
-    font-size: 12px;
+    height: 40px;
     padding: 0 15px;
+    font-size: 14px;
   }
   .feed-form .button_free {
     width: 100%;
+    height: 40px;
+    font-size: 14px;
   }
   .pageup {
     right: 15px;
