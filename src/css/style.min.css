@@ -705,6 +705,11 @@
   margin-top: 37px;
 }
 
+.footer__phone:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
 .footer__social {
   display: -webkit-box;
   display: -ms-flexbox;
